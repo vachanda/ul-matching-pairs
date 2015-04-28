@@ -15,6 +15,7 @@ function get_random_images() {
     var image_url = [];
     for (index=0;index<result.length;index++)
     {
-      image_url[index] = result[index].url;
+      image_url[index] = result[index].url.split("/products")[1];
     }
+    return image_url;
 }
